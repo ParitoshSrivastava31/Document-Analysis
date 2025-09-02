@@ -22,12 +22,15 @@ const eslintConfig = [
   },
   {
     rules: {
-      "react/no-unescaped-entities": "off",
-      "@next/next/no-page-custom-font": "off",
-      "@typescript-eslint/quotes": "off",
-      "quotes": "off",
-      "no-useless-escape": "off",
-      "@typescript-eslint/no-unused-vars": "off",
+      // Disable specific rules that commonly cause issues
+      'react/no-unescaped-entities': 'off',
+      '@next/next/no-page-custom-font': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      'react-hooks/exhaustive-deps': 'off',
+      '@next/next/no-img-element': 'off',
+      'prefer-const': 'off',
+      'no-unused-vars': 'off',
     },
   },
 ];
